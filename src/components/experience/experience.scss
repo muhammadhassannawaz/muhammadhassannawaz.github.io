@@ -1,0 +1,98 @@
+@import "../variables.scss";
+
+.experience-wrapper {
+    width: 50%;
+    margin-top: 200px;
+    .main-heading {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        font-size: 30px;
+        padding: 0;
+        .line {
+            height: 2px;
+            width: 50%;
+            background-color: $borders;
+            margin-left: 10px;
+        }
+    }
+    .wrapper {
+        padding: 50px 0;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        .titles {
+            width: 17%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: 0.5s all ease;
+            border-left: 1px solid $borders;
+
+            button {
+                background-color: transparent;
+                outline: none;
+                border: none;
+                padding: 10px;
+                color: $slate_color;
+                text-align: center;
+                width: 100%;
+                font-size: 15px;
+                text-align: left;
+                transition: 1s all ease;
+
+                &:hover {
+                    background-color: #112240;
+                }
+            }
+            .active {
+                border-left: 2px solid $text_color_primary;
+                color: $text_color_primary;
+            }
+        }
+        .details-wrapper {
+            width: 85%;
+            margin-left: 20px;
+            .heading3 {
+                font-size: 18px;
+                margin: 10px 0;
+                span {
+                    color: $text_color_primary;
+                }
+            }
+            .date {
+                font-size: 14px;
+            }
+            ul {
+                li {
+                    list-style-type: none;
+                    position: relative;
+                    padding-left: 10px;
+                    margin-bottom: 15px;
+                    &:before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: -20px;
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 4px;
+                        background: url("../../images/icons/tick.png");
+                        background-size: cover;
+                    }
+                }
+            }
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    }
+}

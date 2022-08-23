@@ -1,0 +1,41 @@
+@import "../variables.scss";
+
+.About-Me {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 100px;
+    width: 70%;
+    .dp {
+        .dp-img {
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+            cursor: pointer;
+        }
+    }
+    .details-wrapper {
+        margin-left: 80px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        text-align: left;
+        .heading-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .line {
+                height: 2px;
+                background-color: $slate_color;
+                width: 250px;
+                margin: 10px;
+            }
+            .heading3 span {
+                color: $text_color_primary;
+                font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono";
+            }
+        }
+    }
+}

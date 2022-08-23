@@ -1,0 +1,56 @@
+@import "../variables.scss";
+
+.skills {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    text-align: center;
+    .main-heading {
+        transition: 0.5s all ease;
+
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 0;
+        .line {
+            height: 2px;
+            width: 60%;
+            background-color: $borders;
+            margin-left: 10px;
+        }
+    }
+    .skills-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        color: $text_color_primary;
+        font-weight: bold;
+        margin: 30px 0;
+        font-family: monospace;
+        .skill {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            cursor: pointer;
+            // border-radius: 10px;
+            box-shadow: rgba(17, 17, 17, 0.4) 0px 10px 50px;
+            margin: 10px 0;
+            img {
+                width: 100px;
+            }
+            .title {
+                padding: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@import "../variables.scss";
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    width: 100%;
+    .details-section {
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 70%;
+        .skills-ref {
+            padding: 30px 0;
+        }
+    }
+}
